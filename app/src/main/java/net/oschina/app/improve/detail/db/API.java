@@ -16,7 +16,7 @@ public final class API {
     public static void addBehaviors(String json, TextHttpResponseHandler handler) {
         RequestParams params = new RequestParams("json", json);
         AsyncHttpClient client = new AsyncHttpClient();
-        client.addHeader("passcode", BuildConfig.VIOLET_PASSCODE);
+        client.addHeader("passcode", "no know");
         client.post(URL, params, handler);
     }
 }
